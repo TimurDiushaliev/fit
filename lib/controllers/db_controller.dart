@@ -12,7 +12,7 @@ class DbController {
       join(await getDatabasesPath(), 'products.db'),
       onCreate: (Database db, int version) {
         return db.execute(
-            'CREATE TABLE Products(id INTEGER PRIMARY KEY, proteins REAL, fats REAL, carbs REAL)');
+            'CREATE TABLE Products (id INTEGER PRIMARY KEY, proteins REAL, fats REAL, carbs REAL)');
       },
       version: 1,
     );
